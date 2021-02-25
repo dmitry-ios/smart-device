@@ -364,6 +364,17 @@ a {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1433px; }
+  @media (max-width: 1023px) {
+    .container {
+      padding: 0 25px; } }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 17px; } }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -380,3 +391,172 @@ input[type="radio"].visually-hidden {
   overflow: hidden; }
 
 /* Blocks */
+.page__body {
+  position: relative;
+  min-width: 320px; }
+  .page__body::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    width: 100%;
+    height: 878px;
+    content: "";
+    background-image: url("../img/main-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #1b2d37; }
+
+.main-header {
+  padding-top: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff; }
+  @media (max-width: 1023px) {
+    .main-header {
+      padding-top: 20px; } }
+  @media (max-width: 767px) {
+    .main-header {
+      padding-top: 17px; } }
+
+.main-header__contacts {
+  margin: 0;
+  margin-top: 14px;
+  margin-left: auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none; }
+  @media (max-width: 767px) {
+    .main-header__contacts {
+      margin-top: 6px; } }
+
+.main-header__contacts li {
+  margin-left: 88px; }
+  @media (max-width: 1023px) {
+    .main-header__contacts li {
+      margin-left: 33px;
+      width: 25px; } }
+  @media (max-width: 767px) {
+    .main-header__contacts li {
+      margin-left: 24px;
+      width: 23px; } }
+
+.main-header__contacts a {
+  position: relative;
+  padding-left: 37px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: inherit;
+  vertical-align: top; }
+  .main-header__contacts a:focus, .main-header__contacts a:hover {
+    text-decoration: underline; }
+  .main-header__contacts a:active {
+    opacity: 0.3; }
+  @media (max-width: 1023px) {
+    .main-header__contacts a {
+      height: 24px; } }
+
+.main-header__contacts svg {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+@media (max-width: 1023px) {
+  .main-header__contacts span {
+    display: none; } }
+
+@media (max-width: 1023px) {
+  .main-header__link--envelope svg {
+    width: 25px;
+    height: 19px; } }
+
+@media (max-width: 1023px) {
+  .main-header__link--phone svg {
+    width: 24px;
+    height: 24px; } }
+
+@media (max-width: 1023px) {
+  .main-header__link:focus svg,
+  .main-header__link:hover svg {
+    stroke: #ffffff; } }
+
+.main-header__site-user {
+  margin-left: 50px; }
+  @media (max-width: 1023px) {
+    .main-header__site-user {
+      display: none; } }
+
+.main-header__site-user a {
+  margin-top: 4px;
+  padding: 12px 12px;
+  padding-top: 14px;
+  width: 180px;
+  display: block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: inherit;
+  border: 1px solid #ffffff;
+  border-radius: 5px; }
+  .main-header__site-user a:focus, .main-header__site-user a:hover {
+    color: #00b2ff;
+    border-color: #00b2ff; }
+  .main-header__site-user a:active {
+    opacity: 0.5; }
+
+.logo p {
+  margin: 0;
+  margin-top: 6px;
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (max-width: 767px) {
+    .logo p {
+      display: none; } }
+
+.logo span {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #788891; }
+
+.logo .logo__name {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: bold;
+  color: inherit; }
+
+.logo svg {
+  width: 52px;
+  height: 52px; }
+  @media (max-width: 767px) {
+    .logo svg {
+      width: 38px;
+      height: 38px; } }
+
+.logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }

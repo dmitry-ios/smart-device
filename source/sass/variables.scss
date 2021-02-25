@@ -8,7 +8,16 @@ $pt-mono-font-stack: "PT Mono", "Courier New", monospace;
 /* Colors */
 
 $basic-white-color: #fafafa;
+$basic-accent-blue-color: #00b2ff;
 $basic-blue-dark-color: #1b2d37;
 
+$text-white-color: #ffffff;
+$text-light-blue-grey-color: #788891;
 
 /* Layouts */
+
+$max-width-container: 1433px;
+
+$tablet-width-only: 1023px;
+$mobile-width-only: 767px;
+$mobile-width: 320px;

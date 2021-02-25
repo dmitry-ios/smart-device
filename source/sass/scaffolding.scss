@@ -31,6 +31,20 @@ a {
   box-sizing: inherit;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: $max-width-container;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0 25px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 17px;
+  }
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
