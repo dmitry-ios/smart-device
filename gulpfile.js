@@ -57,9 +57,7 @@ gulp.task('images', function () {
         imagemin.mozjpeg({quality: 75, progressive: true}),
         imagemin.svgo()
       ]))
-
       .pipe(gulp.dest('source/img'));
-
 });
 
 gulp.task('webp', function () {

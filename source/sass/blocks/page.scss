@@ -19,5 +19,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-color: $basic-blue-dark-color;
+
+    @media (max-width: $mobile-width-only) {
+      height: 647px;
+    }
   }
 }
