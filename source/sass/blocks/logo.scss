@@ -40,3 +40,16 @@
   display: flex;
   align-items: flex-start;
 }
+
+.logo--full .logo__name {
+  color: $basic-extra-dark-cyan;
+}
+
+.logo--full p {
+  display: flex;
+}
+
+.logo--full svg {
+  width: 52px;
+  height: 52px;
+}

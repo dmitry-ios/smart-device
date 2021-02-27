@@ -1,0 +1,32 @@
+.our-office p,
+.our-office a {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 25px;
+
+  opacity: 0.5;
+}
+
+.our-office a {
+  color: inherit;
+
+  &:focus,
+  &:hover {
+    color: $basic-accent-blue-color;
+    text-decoration: underline;
+
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.our-office ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
