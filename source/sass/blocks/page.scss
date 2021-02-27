@@ -20,6 +20,10 @@
     background-position: center center;
     background-color: $basic-blue-dark-color;
 
+    @media (max-width: $tablet-width-only) {
+      height: 686px;
+    }
+
     @media (max-width: $mobile-width-only) {
       height: 647px;
     }

@@ -1,10 +1,14 @@
 .main-cover {
+  min-height: 793px;
+
   color: $text-white-color;
 
   overflow: hidden;
 
   @media (max-width: $tablet-width-only) {
     position: relative;
+
+    min-height: 614px;
 
     &::before {
       position: absolute;
@@ -24,6 +28,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    min-height: 592px;
+
     &::before {
       top: 37px;
       right: 0;
