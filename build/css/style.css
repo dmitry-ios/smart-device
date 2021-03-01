@@ -1270,7 +1270,8 @@ input[type="radio"].visually-hidden {
     background-size: 872px 873px; }
   @media (max-width: 1023px) {
     .about-us {
-      padding-top: 26px; }
+      padding-top: 26px;
+      padding-bottom: 75px; }
       .about-us::after {
         top: -561px;
         right: 0;
@@ -1280,7 +1281,8 @@ input[type="radio"].visually-hidden {
         background-size: 559px 873px; } }
   @media (max-width: 767px) {
     .about-us {
-      padding-top: 37px; }
+      padding-top: 37px;
+      padding-bottom: 63px; }
       .about-us::before {
         display: none; }
       .about-us::after {
@@ -1358,3 +1360,168 @@ input[type="radio"].visually-hidden {
     background-color: #00b2ff; }
   .about-us a:active {
     opacity: 0.7; }
+  @media (max-width: 767px) {
+    .about-us a {
+      margin-top: -10px; } }
+
+.services {
+  padding-top: 89px;
+  padding-bottom: 127px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #1b2d37; }
+  @media (max-width: 1023px) {
+    .services {
+      padding-top: 51px;
+      padding-bottom: 35px; } }
+
+.services h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal; }
+  @media (max-width: 1023px) {
+    .services h2 {
+      padding-right: 89px;
+      font-size: 32px;
+      line-height: 45px; } }
+  @media (max-width: 767px) {
+    .services h2 {
+      padding-right: 0;
+      padding-left: 10px;
+      font-size: 28px;
+      line-height: 39px; } }
+
+.services ul {
+  margin: 0;
+  margin-top: 51px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none; }
+  @media (max-width: 1023px) {
+    .services ul {
+      margin-top: 48px;
+      display: block; } }
+  @media (max-width: 767px) {
+    .services ul {
+      margin-top: 41px; } }
+
+.services a {
+  width: 100%;
+  min-height: 620px;
+  display: inline-block;
+  font-family: inherit;
+  color: inherit;
+  vertical-align: top; }
+  .services a:focus, .services a:hover {
+    outline: 1px solid #fafafa; }
+  .services a:active {
+    opacity: 0.5; }
+  @media (max-width: 1023px) {
+    .services a {
+      min-height: 256px; } }
+
+.services h3 {
+  margin: 0;
+  padding: 51px 44px;
+  padding-right: 45%;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+  color: inherit; }
+  @media (max-width: 1023px) {
+    .services h3 {
+      padding-top: 46px;
+      padding-right: 0;
+      width: 217px; } }
+  @media (max-width: 767px) {
+    .services h3 {
+      padding-top: 24px;
+      padding-left: 34px;
+      width: 206px; } }
+
+.services__item {
+  position: relative;
+  margin-right: 2.56%;
+  width: 31.62%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .services__item--manufacture {
+    background-image: url("../img/manufacture.png"); }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .services__item--manufacture {
+        background-image: url("../img/manufacture@2x.png"); } }
+  .services__item--assembly {
+    background-image: url("../img/assembly.png"); }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .services__item--assembly {
+        background-image: url("../img/assembly@2x.png"); } }
+  .services__item--component-part {
+    background-image: url("../img/component-part.png"); }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .services__item--component-part {
+        background-image: url("../img/component-part@2x.png"); } }
+  .services__item:nth-child(3n) {
+    margin-right: 0; }
+  .services__item::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 64px;
+    height: 64px;
+    content: "";
+    background-color: #00b2ff;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 6px 9px;
+    background-position: center center; }
+  @media (max-width: 1023px) {
+    .services__item {
+      margin-right: 0;
+      margin-bottom: 45px;
+      width: 100%; }
+      .services__item--manufacture {
+        background-image: url("../img/manufacture-tablet.png"); } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .services__item--manufacture {
+        background-image: url("../img/manufacture-tablet@2x.png"); } }
+  @media (max-width: 1023px) {
+      .services__item--assembly {
+        background-image: url("../img/assembly-tablet.png"); } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .services__item--assembly {
+        background-image: url("../img/assembly-tablet@2x.png"); } }
+  @media (max-width: 1023px) {
+      .services__item--component-part {
+        background-image: url("../img/component-part-tablet.png"); } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .services__item--component-part {
+        background-image: url("../img/component-part-tablet@2x.png"); } }
+  @media (max-width: 767px) {
+    .services__item {
+      margin-bottom: 30px; }
+      .services__item--manufacture {
+        background-image: url("../img/manufacture-mobile.png"); } }
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+      .services__item--manufacture {
+        background-image: url("../img/manufacture-mobile@2x.png"); } }
+  @media (max-width: 767px) {
+      .services__item--assembly {
+        background-image: url("../img/assembly-mobile.png"); } }
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+      .services__item--assembly {
+        background-image: url("../img/assembly-mobile@2x.png"); } }
+  @media (max-width: 767px) {
+      .services__item--component-part {
+        background-image: url("../img/component-part-mobile.png"); } }
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+      .services__item--component-part {
+        background-image: url("../img/component-part-mobile@2x.png"); } }
+
+.services__wrapper {
+  max-width: 1190px; }

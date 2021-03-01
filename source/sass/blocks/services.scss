@@ -1,0 +1,220 @@
+.services {
+  padding-top: 89px;
+  padding-bottom: 127px;
+
+  font-family: $roboto-condensed-font-stack;
+  color: $text-white-color;
+
+  background-color: $basic-blue-dark-color;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 51px;
+    padding-bottom: 35px;
+  }
+}
+
+.services h2 {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+
+  @media (max-width: $tablet-width-only) {
+    padding-right: 89px;
+
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-right: 0;
+    padding-left: 10px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.services ul {
+  margin: 0;
+  margin-top: 51px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 48px;
+    display: block;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 41px;
+  }
+}
+
+.services a {
+  width: 100%;
+  min-height: 620px;
+  display: inline-block;
+
+  font-family: inherit;
+  color: inherit;
+  vertical-align: top;
+
+  &:focus,
+  &:hover {
+    outline: 1px solid $basic-white-color;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    min-height: 256px;
+  }
+}
+
+.services h3 {
+  margin: 0;
+  padding: 51px 44px;
+  padding-right: 45%;
+
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+  color: inherit;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 46px;
+    padding-right: 0;
+    width: 217px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 24px;
+    padding-left: 34px;
+    width: 206px;
+  }
+}
+
+.services__item {
+  position: relative;
+
+  margin-right: 2.56%;
+  width: 31.62%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--manufacture {
+    background-image: url("../img/manufacture.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/manufacture@2x.png");
+    }
+  }
+
+  &--assembly {
+    background-image: url("../img/assembly.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/assembly@2x.png");
+    }
+  }
+
+  &--component-part {
+    background-image: url("../img/component-part.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/component-part@2x.png");
+    }
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 64px;
+    height: 64px;
+
+    content: "";
+
+    background-color: $basic-accent-blue-color;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 6px 9px;
+    background-position: center center;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    margin-right: 0;
+    margin-bottom: 45px;
+    width: 100%;
+
+    &--manufacture {
+      background-image: url("../img/manufacture-tablet.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/manufacture-tablet@2x.png");
+      }
+    }
+
+    &--assembly {
+      background-image: url("../img/assembly-tablet.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/assembly-tablet@2x.png");
+      }
+    }
+
+    &--component-part {
+      background-image: url("../img/component-part-tablet.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/component-part-tablet@2x.png");
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 30px;
+
+    &--manufacture {
+      background-image: url("../img/manufacture-mobile.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/manufacture-mobile@2x.png");
+      }
+    }
+
+    &--assembly {
+      background-image: url("../img/assembly-mobile.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/assembly-mobile@2x.png");
+      }
+    }
+
+    &--component-part {
+      background-image: url("../img/component-part-mobile.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/component-part-mobile@2x.png");
+      }
+    }
+  }
+}
+
+.services__wrapper {
+  max-width: 1190px;
+}

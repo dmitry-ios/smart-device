@@ -83,7 +83,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('js', function () {
-  return gulp.src(['source/js/script.js', 'source/js/accordion.js'])
+  return gulp.src(['source/js/script.js', 'source/js/about-us.js', 'source/js/accordion.js'])
       .pipe(concat('main.js'))
       .pipe(gulp.dest('build/js'));
 });
