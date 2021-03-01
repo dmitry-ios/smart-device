@@ -1,12 +1,6 @@
 'use strict';
 
 (function () {
-  return;
-})();
-
-'use strict';
-
-(function () {
   var blocks = document.querySelectorAll('.accordion');
 
   var closeOthers = function (block) {

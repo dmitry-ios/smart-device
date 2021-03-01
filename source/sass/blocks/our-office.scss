@@ -8,6 +8,12 @@
   opacity: 0.5;
 }
 
+.our-office p {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 5px;
+  }
+}
+
 .our-office a {
   color: inherit;
 

@@ -1,3 +1,73 @@
-.accordion--closed *:not(h2) {
+.accordion h2 {
+  position: relative;
+}
+
+.accordion button {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  display: none;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 16px;
+    height: 16px;
+
+    content: "";
+
+    background-color: $basic-light-grey-color;
+  }
+
+  &::before {
+    top: 12px;
+
+    height: 1px;
+  }
+
+  &::after {
+    left: 12px;
+
+    width: 1px;
+    display: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: inline-block;
+
+    vertical-align: top;
+  }
+}
+
+.accordion--closed:not(.accordion--nojs) *:not(h2):not(button) {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.accordion--closed:not(.accordion--nojs) h2 {
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+  }
+}
+
+.accordion--closed button {
+  &::after {
+    display: block;
+  }
+}
+
+.accordion--nojs button {
   display: none;
 }

@@ -4,17 +4,13 @@
 
 .main-footer__title {
   margin: 0;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
 
   font-family: $roboto-condensed-font-stack;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
-  @media (max-width: $tablet-width-only) {
-    padding-top: 38px;
-  }
 }
 
 .main-footer__inner {
@@ -32,45 +28,70 @@
 
 .main-footer__about {
   width: 232px;
+  flex-shrink: 0;
 
   @media (max-width: $tablet-width-only) {
+    position: relative;
+
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    &::after {
+      position: absolute;
+      left: -25px;
+      bottom: -24px;
+
+      width: calc(100% + 2 * 25px);
+      height: 1px;
+
+      content: "";
+
+      background-color: $border-middle-grey-color;
+    }
   }
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
     align-items: center;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 .main-footer__navigation {
-  width: 468px;
+  width: 478px;
+  padding-left: 10px;
 
   @media (max-width: $tablet-width-only) {
+    padding-left: 0;
+    padding-top: 62px;
     width: 50%;
   }
 
   @media (max-width: $mobile-width-only) {
     margin-top: 54px;
+    padding-top: 29px;
     width: 100%;
-
-    border-top: 1px solid $border-middle-grey-color;
   }
 }
 
 .main-footer__our-office {
-  width: 333px;
+  width: 343px;
+  padding-left: 10px;
 
   @media (max-width: $tablet-width-only) {
+    padding-left: 15px;
+    padding-top: 62px;
     width: 50%;
   }
 
   @media (max-width: $mobile-width-only) {
     margin-top: 28px;
+    padding-left: 0;
+    padding-top: 28px;
     width: 100%;
-
-    border-top: 1px solid $border-middle-grey-color;
   }
 }

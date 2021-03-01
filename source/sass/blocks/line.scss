@@ -1,0 +1,18 @@
+.line {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: -17px;
+
+      width: calc(100% + 2 * 17px);
+      height: 1px;
+
+      content: "";
+
+      background-color: $border-middle-grey-color;
+    }
+  }
+}

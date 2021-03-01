@@ -3,6 +3,14 @@
   padding: 0;
 
   list-style: none;
+
+  &:not(:first-child) {
+    margin-left: 15.08%;
+
+    @media (max-width: $tablet-width-only) {
+      margin-left: 0;
+    }
+  }
 }
 
 .navigation a {
@@ -27,7 +35,6 @@
 
 .navigation nav {
   display: flex;
-  justify-content: space-between;
 
   @media (max-width: $tablet-width-only) {
     display: block;
