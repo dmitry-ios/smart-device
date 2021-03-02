@@ -3,6 +3,10 @@
 
   min-width: $mobile-width;
 
+  &--fullscreen {
+    overflow-y: hidden;
+  }
+
   &::before {
     position: absolute;
     top: 0;

@@ -1,0 +1,194 @@
+.report {
+  color: $text-white-color;
+
+  background-color: $basic-accent-blue-color;
+}
+
+.report h2 {
+  margin: 0;
+
+  font-family: $roboto-condensed-font-stack;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.report p {
+  margin: 0;
+  margin-top: 7px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 15px;
+  }
+}
+
+.report__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.report__form input,
+.report__form textarea {
+  padding: 14px 16px;
+  width: 100%;
+
+  color: inherit;
+
+  background-color: $background-field-color;
+  border: none;
+  resize: none;
+
+  &:focus,
+  &:hover {
+    outline: 1px solid $text-white-color;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    padding: 17px 20px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    padding: 14px 16px;
+    padding-bottom: 20px;
+  }
+}
+
+.report__form input {
+  margin-top: 40px;
+}
+
+.report__form textarea {
+  margin-top: 40px;
+  height: 154px;
+
+  @media (max-width: $tablet-width-only) {
+    height: 159px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 31px;
+    height: 104px;
+  }
+}
+
+.report__form button {
+  margin-top: 40px;
+  padding: 0;
+  width: 100%;
+  min-height: 45px;
+  display: block;
+
+  font-family: $roboto-condensed-font-stack;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: inherit;
+
+  background-color: transparent;
+  border: 1px solid $text-white-color;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    min-height: 48px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 22px;
+  }
+}
+
+.report__username-field,
+.report__phone-field,
+.report__message-field,
+.report__agreement-field {
+  width: 100%;
+}
+
+.report__agreement-field {
+  margin-top: 40px;
+  padding-left: 31px;
+  order: 1;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 42px;
+    padding-left: 35px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 24px;
+  }
+}
+
+.report__agreement-field label {
+  position: relative;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  opacity: 0.8;
+
+  &::before {
+    position: absolute;
+    top: 7px;
+    left: -30px;
+
+    width: 16px;
+    height: 16px;
+
+    content: "";
+
+    border: 1px solid $text-white-color;
+    cursor: pointer;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      top: 4px;
+      left: -36px;
+    }
+  }
+}
+
+.report__agreement-field input:focus + label {
+  opacity: 1;
+}
+
+.report__agreement-field input:checked + label {
+  &::before {
+    background-image: url("../img/checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

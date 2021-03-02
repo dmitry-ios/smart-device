@@ -1,5 +1,13 @@
 .main-footer {
   padding-top: 65px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 46px;
+  }
 }
 
 .main-footer__title {
