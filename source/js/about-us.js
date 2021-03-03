@@ -7,6 +7,7 @@
 
   var text = document.querySelector('.about-us__text--less');
   var originText = text && text.textContent;
+  var isLess = false;
 
   var setupText = function (width) {
     if (!originText) {
@@ -14,13 +15,17 @@
     }
 
     if (width >= BREAKPOINT) {
-      text.textContent = originText;
+      if (isLess) {
+        text.textContent = originText;
+        isLess = false;
+      }
       return;
     }
 
-    if (text.textContent.length > MAX_SYMBOLS) {
+    if (!isLess && text.textContent.length > MAX_SYMBOLS) {
       var newText = text.textContent.slice(0, MAX_SYMBOLS);
       text.textContent = newText.trim().concat(ENDING_SYMBOLS);
+      isLess = true;
     }
   };
 

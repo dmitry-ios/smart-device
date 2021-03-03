@@ -64,12 +64,12 @@
   }
 }
 
-.report__form input {
+.report__username-field,
+.report__phone-field {
   margin-top: 40px;
 }
 
 .report__form textarea {
-  margin-top: 40px;
   height: 154px;
 
   @media (max-width: $tablet-width-only) {
@@ -77,8 +77,15 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 31px;
     height: 104px;
+  }
+}
+
+.report__message-field {
+  margin-top: 40px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 31px;
   }
 }
 
@@ -126,6 +133,8 @@
 .report__message-field,
 .report__agreement-field {
   width: 100%;
+
+  background-color: $basic-accent-blue-color;
 }
 
 .report__agreement-field {

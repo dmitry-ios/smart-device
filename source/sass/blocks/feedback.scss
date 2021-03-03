@@ -74,6 +74,10 @@
     background-size: 686px auto;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/paper-airplane@2x.png");
+    }
   }
 
   @media (max-width: $tablet-width-only) {
@@ -98,10 +102,14 @@
 
 .feedback__username-field {
   margin-right: auto;
+  margin-top: 54px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 27px;
+  }
 }
 
-.feedback__username-field input,
-.feedback__phone-field input {
+.feedback__phone-field {
   margin-top: 54px;
 
   @media (max-width: $mobile-width-only) {

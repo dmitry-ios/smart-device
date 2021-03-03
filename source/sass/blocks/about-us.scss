@@ -83,6 +83,10 @@
   background-size: 220px 317px;
   background-position: 101px 4px;
 
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/2005year@2x.png");
+  }
+
   @media (max-width: $tablet-width-only) {
     padding-left: 212px;
     padding-right: 25px;
@@ -90,6 +94,10 @@
     background-image: url("../img/2005year-tablet.png");
     background-size: 244px 362px;
     background-position: 0 -2px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/2005year-tablet@2x.png");
+    }
   }
 
   @media (max-width: $mobile-width-only) {

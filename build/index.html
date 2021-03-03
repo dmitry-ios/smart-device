@@ -48,7 +48,7 @@
       </li>
     </ul>
     <div class="main-header__site-user">
-      <a href="#">
+      <a class="js-call" href="#">
         Заказать звонок
       </a>
     </div>
@@ -143,7 +143,7 @@
       </div>
     </section>
 
-    <section class="feedback report">
+    <section class="feedback report" id="feedback">
       <div class="container feedback__container">
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
@@ -227,10 +227,10 @@
       <section class="main-footer__navigation navigation line accordion accordion--closed accordion--nojs">
         <h2 class="main-footer__title">
           Разделы сайта
-          <button type="button">
-            <span class="visually-hidden">Открыть</span>
-          </button>
         </h2>
+        <button type="button">
+          <span class="visually-hidden">Открыть/Закрыть</span>
+        </button>
         <nav>
           <ul>
             <li><a href="#">О компании</a></li>
@@ -249,10 +249,10 @@
       <section class="main-footer__our-office our-office line accordion accordion--closed accordion--nojs">
         <h2 class="main-footer__title">
           Наш офис
-          <button type="button">
-            <span class="visually-hidden">Открыть</span>
-          </button>
         </h2>
+        <button type="button">
+          <span class="visually-hidden">Открыть/Закрыть</span>
+        </button>
         <p>г. Мытищи, Олимпийский проспект, д.10</p>
         <ul>
           <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
@@ -267,7 +267,7 @@
         <h2 class="visually-hidden">Правовая информация</h2>
         <p class="copyright__info">Все права защищены</p>
         <p lang="en" class="copyright__years">1999-2018 SD Service Devices</p>
-        <p><a href="">Условия конфиденциальности</a></p>
+        <p><a href="#">Условия конфиденциальности</a></p>
         <p lang="en">Developed by <a href="#">wow studio</a></p>
       </div>
     </section>
@@ -282,17 +282,17 @@
       <form class="modal-form__form report__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-form__field report__username-field">
           <label class="visually-hidden" for="username-call-field">Введите свое имя</label>
-          <input type="text" name="username" id="username-call-field" placeholder="Имя" required="">
+          <input class="js-username" type="text" name="username" id="username-call-field" placeholder="Имя" required="">
         </div>
 
         <div class="modal-form__field report__phone-field">
           <label class="visually-hidden" for="phone-call-field">Введите свой номер телефона</label>
-          <input type="tel" name="phone" id="phone-call-field" placeholder="Телефон" required="">
+          <input class="js-phone" type="tel" name="phone" id="phone-call-field" placeholder="Телефон" required="">
         </div>
 
         <div class="modal-form__field report__message-field">
           <label class="visually-hidden" for="message-call-field">Задайте интересующий Вас вопрос</label>
-          <textarea name="message" id="message-call-field" placeholder="Ваш вопрос" required=""></textarea>
+          <textarea class="js-question" name="message" id="message-call-field" placeholder="Ваш вопрос" required=""></textarea>
         </div>
 
         <div class="modal-form__agreement-field report__agreement-field">
@@ -302,7 +302,7 @@
 
         <button type="submit">Отправить</button>
       </form>
-      <button type="button" aria-label="Закрыть окно">
+      <button class="js-modal-close-button" type="button" aria-label="Закрыть окно">
         <svg width="17" height="17" viewBox="0 0 17 17" aria-hidden="true" focusable="false">
           <use xlink:href="img/sprite_auto.svg#icon-close"></use>
         </svg>
@@ -310,6 +310,7 @@
     </div>
   </section>
 
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -16,6 +16,7 @@ var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
 var concat = require('gulp-concat');
+var strip = require('gulp-strip-comments');
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
@@ -83,8 +84,21 @@ gulp.task('html', function () {
 });
 
 gulp.task('js', function () {
-  return gulp.src(['source/js/script.js', 'source/js/about-us.js', 'source/js/accordion.js'])
+  return gulp.src([
+    'source/js/util.js',
+    'source/js/modal.js',
+    'source/js/about-us.js',
+    'source/js/feedback.js',
+    'source/js/accordion.js'
+  ])
       .pipe(concat('main.js'))
+      .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('vendorJs', function () {
+  return gulp.src('./node_modules/imask/dist/imask.js')
+      .pipe(concat('vendor.js'))
+      .pipe(strip())
       .pipe(gulp.dest('build/js'));
 });
 
@@ -103,5 +117,5 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'vendorJs', 'js'));
 gulp.task('start', gulp.series('build', 'server'));
