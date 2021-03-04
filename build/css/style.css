@@ -1389,7 +1389,8 @@ input[type="radio"].visually-hidden {
 
 .about-us p {
   margin: 0;
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: #666666; }
   @media (max-width: 1023px) {
     .about-us p {
       margin-top: 23px; } }
