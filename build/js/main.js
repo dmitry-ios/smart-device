@@ -72,11 +72,11 @@
   var phoneValue = '';
   var questionValue = '';
 
-  var phoneMask = window.util.makePhoneMask(phoneInput);
-
   if (!isAvailable) {
     return;
   }
+
+  var phoneMask = window.util.makePhoneMask(phoneInput);
 
   try {
     usernameValue = localStorage.getItem('username');
