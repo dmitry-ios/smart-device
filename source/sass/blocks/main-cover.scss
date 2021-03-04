@@ -8,11 +8,11 @@
   @media (max-width: $tablet-width-only) {
     position: relative;
 
-    min-height: 614px;
+    min-height: 608px;
 
     &::before {
       position: absolute;
-      top: 41px;
+      top: 35px;
       right: 0;
 
       width: 260px;
@@ -32,7 +32,7 @@
 
     &::after {
       position: absolute;
-      top: -72px;
+      top: -77px;
       right: 0;
       z-index: -1;
 
@@ -47,10 +47,10 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    min-height: 592px;
+    min-height: 586px;
 
     &::before {
-      top: 37px;
+      top: 31px;
       right: 0;
 
       width: 294px;
@@ -65,7 +65,7 @@
     }
 
     &::after {
-      top: -55px;
+      top: -61px;
       right: 0;
 
       width: 169px;
@@ -80,7 +80,7 @@
 .main-cover__header {
   position: relative;
 
-  padding-top: 231px;
+  padding-top: 226px;
   width: 718px;
 
   &::before,
@@ -110,7 +110,7 @@
   }
 
   &::after {
-    top: 32px;
+    top: 28px;
     right: -731px;
     z-index: -101;
 
@@ -122,7 +122,7 @@
   }
 
   @media (max-width: $tablet-width-only) {
-    padding-top: 116px;
+    padding-top: 110px;
     padding-left: 63px;
     width: 570px;
 
@@ -133,7 +133,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 231px;
+    padding-top: 225px;
     padding-left: 0;
     width: auto;
   }
@@ -274,7 +274,7 @@
 }
 
 .main-cover__actions {
-  margin-top: 93px;
+  margin-top: 84px;
   padding-top: 94px;
 
   @media (max-width: $tablet-width-only) {

@@ -1,10 +1,5 @@
-.logo__name {
-  margin-top: 6px;
-  margin-left: 16px;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
+.logo a {
+  display: block;
 }
 
 .logo svg {
@@ -19,13 +14,8 @@
   }
 }
 
-.logo a {
-  display: flex;
-  align-items: flex-start;
-}
-
 .logo--full svg {
-  width: 202px;
+  width: 216px;
   height: 52px;
 
   fill: $basic-extra-dark-cyan;

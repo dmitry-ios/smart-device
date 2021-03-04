@@ -70,8 +70,12 @@
 
 .main-header__contacts svg {
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
+
+  @media (max-width: $tablet-width-only) {
+    top: 0;
+  }
 }
 
 .main-header__contacts span {
