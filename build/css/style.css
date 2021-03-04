@@ -1631,6 +1631,21 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   resize: none; }
+  .report__form input::-webkit-input-placeholder,
+  .report__form textarea::-webkit-input-placeholder {
+    color: #ffffff; }
+  .report__form input::-moz-placeholder,
+  .report__form textarea::-moz-placeholder {
+    color: #ffffff; }
+  .report__form input:-ms-input-placeholder,
+  .report__form textarea:-ms-input-placeholder {
+    color: #ffffff; }
+  .report__form input::-ms-input-placeholder,
+  .report__form textarea::-ms-input-placeholder {
+    color: #ffffff; }
+  .report__form input::placeholder,
+  .report__form textarea::placeholder {
+    color: #ffffff; }
   .report__form input:focus, .report__form input:hover,
   .report__form textarea:focus,
   .report__form textarea:hover {

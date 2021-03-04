@@ -49,6 +49,10 @@
   border: none;
   resize: none;
 
+  &::placeholder {
+    color: $text-white-color;
+  }
+
   &:focus,
   &:hover {
     outline: 1px solid $text-white-color;
