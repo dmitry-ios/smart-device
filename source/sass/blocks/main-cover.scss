@@ -229,6 +229,7 @@
   text-transform: uppercase;
   color: inherit;
   letter-spacing: 0.05em;
+  vertical-align: top;
 
   background-color: $basic-accent-blue-color;
   border: 1px solid $basic-accent-blue-color;
@@ -288,6 +289,7 @@
   line-height: 16px;
   font-weight: normal;
   color: inherit;
+  vertical-align: bottom;
 
   opacity: 0.5;
   transform: rotate(-90deg);

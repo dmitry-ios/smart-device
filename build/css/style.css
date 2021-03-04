@@ -757,6 +757,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: inherit;
   letter-spacing: 0.05em;
+  vertical-align: top;
   background-color: #00b2ff;
   border: 1px solid #00b2ff;
   border-radius: 5px; }
@@ -799,6 +800,7 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   font-weight: normal;
   color: inherit;
+  vertical-align: bottom;
   opacity: 0.5;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -1249,6 +1251,7 @@ input[type="radio"].visually-hidden {
   width: 24px;
   height: 24px;
   display: none;
+  vertical-align: top;
   background-color: transparent;
   border: none;
   cursor: pointer; }
@@ -1414,6 +1417,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #00b2ff;
+  vertical-align: top;
   border: 1px solid #00b2ff;
   border-radius: 5px; }
   .about-us a:focus, .about-us a:hover {
@@ -1629,6 +1633,7 @@ input[type="radio"].visually-hidden {
 .report__form textarea {
   padding: 14px 16px;
   width: 100%;
+  vertical-align: top;
   color: inherit;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
@@ -1958,6 +1963,7 @@ input[type="radio"].visually-hidden {
   top: 22px;
   right: 20px;
   font-size: 0;
+  vertical-align: top;
   padding: 0;
   width: 17px;
   height: 17px;
