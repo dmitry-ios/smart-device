@@ -536,38 +536,17 @@ input[type="radio"].visually-hidden {
   .main-header__site-user a:active {
     opacity: 0.5; }
 
-.logo p {
-  margin: 0;
+.logo__name {
   margin-top: 6px;
-  margin-left: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  margin-left: 16px; }
   @media (max-width: 767px) {
-    .logo p {
+    .logo__name {
       display: none; } }
 
-.logo span {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 500;
-  color: #788891; }
-
-.logo .logo__name {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 25px;
-  line-height: 29px;
-  font-weight: bold;
-  color: inherit; }
-
 .logo svg {
-  width: 52px;
-  height: 52px; }
+  width: 202px;
+  height: 52px;
+  fill: #ffffff; }
   @media (max-width: 767px) {
     .logo svg {
       width: 38px;
@@ -581,17 +560,10 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: start;
           align-items: flex-start; }
 
-.logo--full .logo__name {
-  color: #203c42; }
-
-.logo--full p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .logo--full svg {
-  width: 52px;
-  height: 52px; }
+  width: 202px;
+  height: 52px;
+  fill: #203c42; }
 
 .main-cover {
   min-height: 793px;

@@ -1,34 +1,17 @@
-.logo p {
-  margin: 0;
+.logo__name {
   margin-top: 6px;
   margin-left: 16px;
-  display: flex;
-  flex-direction: column;
 
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 }
 
-.logo span {
-  font-family: $roboto-font-stack;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 500;
-  color: $text-light-blue-grey-color;
-}
-
-.logo .logo__name {
-  font-family: $roboto-condensed-font-stack;
-  font-size: 25px;
-  line-height: 29px;
-  font-weight: bold;
-  color: inherit;
-}
-
 .logo svg {
-  width: 52px;
+  width: 202px;
   height: 52px;
+
+  fill: $text-white-color;
 
   @media (max-width: $mobile-width-only) {
     width: 38px;
@@ -41,15 +24,9 @@
   align-items: flex-start;
 }
 
-.logo--full .logo__name {
-  color: $basic-extra-dark-cyan;
-}
-
-.logo--full p {
-  display: flex;
-}
-
 .logo--full svg {
-  width: 52px;
+  width: 202px;
   height: 52px;
+
+  fill: $basic-extra-dark-cyan;
 }
