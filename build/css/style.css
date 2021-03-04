@@ -964,6 +964,7 @@ input[type="radio"].visually-hidden {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
+  font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase; }
 
