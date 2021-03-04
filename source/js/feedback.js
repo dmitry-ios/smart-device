@@ -6,7 +6,7 @@
   var phoneMask = window.util.makePhoneMask(phoneInput);
   var isAvailable = form && phoneInput;
 
-  if (isAvailable) {
+  if (!isAvailable) {
     return;
   }
 
