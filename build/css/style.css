@@ -737,8 +737,10 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .main-cover__header a {
       margin-top: 40px;
-      margin-left: 1px;
-      width: 100%; } }
+      margin-left: auto;
+      margin-right: auto;
+      width: 286px;
+      display: block; } }
 
 @media (max-width: 767px) {
   .main-cover__header span {
@@ -803,12 +805,6 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .advantages {
       padding-top: 37px; } }
-
-.advantages br {
-  display: none; }
-  @media (max-width: 767px) {
-    .advantages br {
-      display: inline; } }
 
 .advantages h3 {
   margin: 0;
@@ -902,6 +898,10 @@ input[type="radio"].visually-hidden {
       width: 100%;
       min-height: 232px; } }
 
+@media (max-width: 767px) {
+  .advantages__item--small p {
+    padding-right: 5px; } }
+
 .advantages__item:hover h3,
 .advantages__item:hover p {
   color: #ffffff; }
@@ -965,7 +965,7 @@ input[type="radio"].visually-hidden {
       .main-footer__about::after {
         position: absolute;
         left: -25px;
-        bottom: -24px;
+        bottom: -18px;
         width: calc(100% + 2 * 25px);
         height: 1px;
         content: "";
@@ -992,7 +992,7 @@ input[type="radio"].visually-hidden {
       width: 50%; } }
   @media (max-width: 767px) {
     .main-footer__navigation {
-      margin-top: 54px;
+      margin-top: 46px;
       padding-top: 29px;
       width: 100%; } }
 
@@ -1035,13 +1035,16 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none; }
   @media (max-width: 767px) {
     .socials ul {
-      margin-top: 26px; } }
+      margin-top: 31px; } }
 
 .socials li {
-  margin-right: 16px; }
+  margin-right: 16px;
+  margin-bottom: 8px; }
   @media (max-width: 1023px) {
     .socials li:last-child {
       margin-right: 0; } }
@@ -1063,7 +1066,7 @@ input[type="radio"].visually-hidden {
               order: -1; } }
   @media (max-width: 767px) {
     .socials small {
-      margin-top: 11px;
+      margin-top: 6px;
       margin-right: 0; } }
 
 .socials svg {
@@ -1245,6 +1248,10 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .accordion--closed:not(.accordion--nojs) h2 {
     padding-bottom: 0; } }
+
+@media (max-width: 767px) {
+  .accordion:not(.accordion--nojs) h2 {
+    cursor: pointer; } }
 
 .accordion--closed button::after {
   display: block; }
@@ -1599,6 +1606,7 @@ input[type="radio"].visually-hidden {
   vertical-align: top;
   color: inherit;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
   border: none;
   resize: none; }
   .report__form input::-webkit-input-placeholder,
@@ -1840,14 +1848,35 @@ input[type="radio"].visually-hidden {
     .feedback__form button {
       width: 100%; } }
 
+@media (max-width: 1023px) {
+  .feedback__form input,
+  .feedback__form textarea {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media (max-width: 767px) {
+  .feedback__form input,
+  .feedback__form textarea {
+    padding-left: 16px;
+    padding-right: 16px; } }
+
 .feedback__agreement-field {
   width: 262px; }
   @media (max-width: 1023px) {
     .feedback__agreement-field {
+      margin-top: 49px;
+      padding-left: 38px;
       width: 273px; } }
   @media (max-width: 767px) {
     .feedback__agreement-field {
+      margin-top: 24px;
+      padding-left: 32px;
       width: 100%; } }
+
+@media (max-width: 1023px) {
+  .feedback__agreement-field label::before {
+    top: 4px;
+    left: -34px; } }
 
 .modal-form {
   position: fixed;
@@ -1897,7 +1926,7 @@ input[type="radio"].visually-hidden {
   padding-right: 20px; }
 
 .modal-form__field {
-  margin-top: 34px; }
+  margin-top: 35px; }
 
 .modal-form__field input,
 .modal-form__field textarea {
@@ -1909,7 +1938,7 @@ input[type="radio"].visually-hidden {
   height: 101px; }
 
 .modal-form__form button {
-  margin-top: 25px; }
+  margin-top: 31px; }
 
 .modal-form__agreement-field {
   margin-top: 31px;
@@ -1923,13 +1952,22 @@ input[type="radio"].visually-hidden {
 
 .modal-form__form + button {
   position: absolute;
-  top: 22px;
-  right: 20px;
+  top: 4px;
+  right: 4px;
   font-size: 0;
   vertical-align: top;
-  padding: 0;
-  width: 17px;
-  height: 17px;
+  padding: 16px;
+  width: 49px;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   border: none;
   background-color: transparent; }

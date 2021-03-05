@@ -46,14 +46,6 @@
   }
 }
 
-.advantages br {
-  display: none;
-
-  @media (max-width: $mobile-width-only) {
-    display: inline;
-  }
-}
-
 .advantages h3 {
   margin: 0;
 
@@ -167,6 +159,12 @@
     padding-bottom: 24px;
     width: 100%;
     min-height: 232px;
+  }
+}
+
+.advantages__item--small p {
+  @media (max-width: $mobile-width-only) {
+    padding-right: 5px;
   }
 }
 

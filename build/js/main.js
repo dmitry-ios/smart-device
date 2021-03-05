@@ -135,6 +135,9 @@
       localStorage.setItem('username', usernameInput.value);
       localStorage.setItem('phone', phoneInput.value);
       localStorage.setItem('question', questionText.value);
+      window.util.resetValidity(usernameInput);
+      window.util.resetValidity(phoneInput);
+      window.util.resetValidity(questionText);
     }
   });
 
@@ -233,7 +236,7 @@
   };
 
   var toggleBlock = function (block) {
-    var btn = block.querySelector('button');
+    var btn = block.querySelector('h2');
 
     btn.addEventListener('click', function () {
       closeOthers(block);

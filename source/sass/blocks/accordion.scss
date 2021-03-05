@@ -64,6 +64,12 @@
   }
 }
 
+.accordion:not(.accordion--nojs) h2 {
+  @media (max-width: $mobile-width-only) {
+    cursor: pointer;
+  }
+}
+
 .accordion--closed button {
   &::after {
     display: block;

@@ -49,7 +49,7 @@
     &::after {
       position: absolute;
       left: -25px;
-      bottom: -24px;
+      bottom: -18px;
 
       width: calc(100% + 2 * 25px);
       height: 1px;
@@ -81,7 +81,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 54px;
+    margin-top: 46px;
     padding-top: 29px;
     width: 100%;
   }

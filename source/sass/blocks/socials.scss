@@ -16,16 +16,18 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 26px;
+    margin-top: 31px;
   }
 }
 
 .socials li {
   margin-right: 16px;
+  margin-bottom: 8px;
 
   @media (max-width: $tablet-width-only) {
     &:last-child {
@@ -52,7 +54,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 11px;
+    margin-top: 6px;
     margin-right: 0;
   }
 }

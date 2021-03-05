@@ -87,6 +87,9 @@
       localStorage.setItem('username', usernameInput.value);
       localStorage.setItem('phone', phoneInput.value);
       localStorage.setItem('question', questionText.value);
+      window.util.resetValidity(usernameInput);
+      window.util.resetValidity(phoneInput);
+      window.util.resetValidity(questionText);
     }
   });
 
