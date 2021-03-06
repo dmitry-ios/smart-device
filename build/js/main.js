@@ -4,6 +4,9 @@
   var PHONE_CHECK_MSG = 'Введите номер телефона в формате +7(xxx)xxx-xxxx';
 
   var makePhoneMask = function (phoneInput) {
+    if (!window.IMask) {
+      return null;
+    }
     var mask = new window.IMask(phoneInput, {
       mask: '+{7}(000)000-0000'
     });
@@ -111,7 +114,9 @@
     }
     if (phoneValue !== null) {
       phoneInput.value = phoneValue;
-      phoneMask.updateValue();
+      if (phoneMask !== null) {
+        phoneMask.updateValue();
+      }
     }
     questionText.value = questionValue;
     usernameInput.focus();
@@ -152,7 +157,9 @@
   });
 
   phoneInput.addEventListener('focus', function () {
-    window.util.startInput(phoneInput, phoneMask);
+    if (phoneMask !== null) {
+      window.util.startInput(phoneInput, phoneMask);
+    }
   });
 
   phoneInput.addEventListener('input', function () {
@@ -218,7 +225,9 @@
   });
 
   phoneInput.addEventListener('focus', function () {
-    window.util.startInput(phoneInput, phoneMask);
+    if (phoneMask !== null) {
+      window.util.startInput(phoneInput, phoneMask);
+    }
   });
 
   phoneInput.addEventListener('input', function () {

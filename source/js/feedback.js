@@ -18,7 +18,9 @@
   });
 
   phoneInput.addEventListener('focus', function () {
-    window.util.startInput(phoneInput, phoneMask);
+    if (phoneMask !== null) {
+      window.util.startInput(phoneInput, phoneMask);
+    }
   });
 
   phoneInput.addEventListener('input', function () {

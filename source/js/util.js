@@ -4,6 +4,9 @@
   var PHONE_CHECK_MSG = 'Введите номер телефона в формате +7(xxx)xxx-xxxx';
 
   var makePhoneMask = function (phoneInput) {
+    if (!window.IMask) {
+      return null;
+    }
     var mask = new window.IMask(phoneInput, {
       mask: '+{7}(000)000-0000'
     });

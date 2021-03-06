@@ -63,7 +63,9 @@
     }
     if (phoneValue !== null) {
       phoneInput.value = phoneValue;
-      phoneMask.updateValue();
+      if (phoneMask !== null) {
+        phoneMask.updateValue();
+      }
     }
     questionText.value = questionValue;
     usernameInput.focus();
@@ -104,7 +106,9 @@
   });
 
   phoneInput.addEventListener('focus', function () {
-    window.util.startInput(phoneInput, phoneMask);
+    if (phoneMask !== null) {
+      window.util.startInput(phoneInput, phoneMask);
+    }
   });
 
   phoneInput.addEventListener('input', function () {
