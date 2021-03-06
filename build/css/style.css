@@ -932,6 +932,10 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .main-footer__title {
+      padding-top: 29px;
+      padding-bottom: 28px; } }
 
 .main-footer__inner {
   display: -webkit-box;
@@ -993,7 +997,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .main-footer__navigation {
       margin-top: 46px;
-      padding-top: 29px;
+      padding-top: 0;
       width: 100%; } }
 
 .main-footer__our-office {
@@ -1006,9 +1010,9 @@ input[type="radio"].visually-hidden {
       width: 50%; } }
   @media (max-width: 767px) {
     .main-footer__our-office {
-      margin-top: 28px;
+      margin-top: 0;
       padding-left: 0;
-      padding-top: 28px;
+      padding-top: 0;
       width: 100%; } }
 
 .socials {
@@ -1153,7 +1157,7 @@ input[type="radio"].visually-hidden {
       padding: 21px 0; } }
   @media (max-width: 767px) {
     .copyright {
-      margin-top: 26px;
+      margin-top: 0;
       padding-top: 3px; } }
 
 .copyright p {
@@ -1208,14 +1212,16 @@ input[type="radio"].visually-hidden {
 
 .accordion {
   position: relative; }
+  .accordion:not(.accordion--closed) {
+    padding-bottom: 26px; }
 
 .accordion button {
   position: absolute;
-  top: 25px;
-  right: -3px;
+  top: 0;
+  left: 0;
   padding: 4px;
-  width: 24px;
-  height: 24px;
+  width: 100%;
+  height: 100%;
   display: none;
   vertical-align: top;
   background-color: transparent;
@@ -1224,16 +1230,17 @@ input[type="radio"].visually-hidden {
   .accordion button::before, .accordion button::after {
     position: absolute;
     top: 4px;
-    left: 4px;
+    right: 0;
     width: 16px;
     height: 16px;
     content: "";
     background-color: #cdcdcd; }
   .accordion button::before {
-    top: 12px;
+    top: 37px;
     height: 1px; }
   .accordion button::after {
-    left: 12px;
+    top: 29px;
+    right: 7px;
     width: 1px;
     display: none; }
   @media (max-width: 767px) {
@@ -1241,17 +1248,16 @@ input[type="radio"].visually-hidden {
       display: inline-block;
       vertical-align: top; } }
 
+.accordion__header {
+  position: relative; }
+
 @media (max-width: 767px) {
-  .accordion--closed:not(.accordion--nojs) *:not(h2):not(button) {
+  .accordion--closed:not(.accordion--nojs) *:not(h2):not(button):not(.accordion__header) {
     display: none; } }
 
 @media (max-width: 767px) {
   .accordion--closed:not(.accordion--nojs) h2 {
-    padding-bottom: 0; } }
-
-@media (max-width: 767px) {
-  .accordion:not(.accordion--nojs) h2 {
-    cursor: pointer; } }
+    padding-bottom: 26px; } }
 
 .accordion--closed button::after {
   display: block; }
@@ -1401,7 +1407,7 @@ input[type="radio"].visually-hidden {
 
 .services {
   padding-top: 89px;
-  padding-bottom: 82px;
+  padding-bottom: 84px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
   background-color: #1b2d37; }
@@ -1583,7 +1589,7 @@ input[type="radio"].visually-hidden {
 
 .report p {
   margin: 0;
-  margin-top: 7px; }
+  margin-top: 12px; }
   @media (max-width: 1023px) {
     .report p {
       margin-top: 15px; } }
@@ -1741,8 +1747,8 @@ input[type="radio"].visually-hidden {
 .feedback {
   position: relative;
   z-index: 2;
-  padding-top: 92px;
-  padding-bottom: 114px; }
+  padding-top: 88px;
+  padding-bottom: 77px; }
   .feedback::after {
     position: absolute;
     top: 36px;
@@ -1758,7 +1764,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 1023px) {
     .feedback {
       padding-top: 80px;
-      padding-bottom: 103px; }
+      padding-bottom: 100px; }
       .feedback::after {
         display: none; } }
   @media (max-width: 767px) {
@@ -1766,22 +1772,54 @@ input[type="radio"].visually-hidden {
       padding-top: 28px;
       padding-bottom: 37px; } }
 
-.feedback h2,
-.feedback p,
-.feedback__form {
-  margin-left: auto;
-  margin-right: 122px;
-  width: 570px; }
+.feedback__container {
+  padding-left: 0;
+  max-width: 1665px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .feedback__container::before {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 114px;
+    width: 686px;
+    height: 500px;
+    content: "";
+    background-image: url("../img/paper-airplane.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .feedback__container::before {
+        background-image: url("../img/paper-airplane@2x.png"); } }
   @media (max-width: 1023px) {
-    .feedback h2,
-    .feedback p,
-    .feedback__form {
+    .feedback__container {
+      padding-left: 28px;
+      display: block; }
+      .feedback__container::before {
+        display: none; } }
+  @media (max-width: 767px) {
+    .feedback__container {
+      padding-left: 17px; } }
+
+.feedback__wrapper {
+  margin-right: 237px;
+  width: 570px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+  @media (max-width: 1023px) {
+    .feedback__wrapper {
+      margin-left: auto;
       margin-right: auto;
       width: 590px; } }
   @media (max-width: 767px) {
-    .feedback h2,
-    .feedback p,
-    .feedback__form {
+    .feedback__wrapper {
       width: 100%; } }
 
 .feedback__form {
@@ -1793,25 +1831,12 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
-  .feedback__form::before {
-    position: absolute;
-    top: -231px;
-    left: -801px;
-    width: 686px;
-    height: 641px;
-    content: "";
-    background-image: url("../img/paper-airplane.png");
-    background-size: 686px auto;
-    background-repeat: no-repeat;
-    background-position: center center; }
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-      .feedback__form::before {
-        background-image: url("../img/paper-airplane@2x.png"); } }
   @media (max-width: 1023px) {
-    .feedback__form::before {
-      display: none; } }
+    .feedback__form {
+      padding-top: 5px; } }
   @media (max-width: 767px) {
     .feedback__form {
+      padding-top: 0;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -1827,13 +1852,13 @@ input[type="radio"].visually-hidden {
 
 .feedback__username-field {
   margin-right: auto;
-  margin-top: 54px; }
+  margin-top: 51px; }
   @media (max-width: 767px) {
     .feedback__username-field {
       margin-top: 27px; } }
 
 .feedback__phone-field {
-  margin-top: 54px; }
+  margin-top: 51px; }
   @media (max-width: 767px) {
     .feedback__phone-field {
       margin-top: 27px; } }
@@ -1932,7 +1957,7 @@ input[type="radio"].visually-hidden {
 .modal-form__field textarea {
   padding-left: 24px;
   padding-right: 24px;
-  padding-bottom: 17px; }
+  padding-bottom: 14px; }
 
 .modal-form__field textarea {
   height: 101px; }

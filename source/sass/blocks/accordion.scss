@@ -1,15 +1,19 @@
 .accordion {
   position: relative;
+
+  &:not(.accordion--closed) {
+    padding-bottom: 26px;
+  }
 }
 
 .accordion button {
   position: absolute;
-  top: 25px;
-  right: -3px;
+  top: 0;
+  left: 0;
 
   padding: 4px;
-  width: 24px;
-  height: 24px;
+  width: 100%;
+  height: 100%;
   display: none;
 
   vertical-align: top;
@@ -22,7 +26,7 @@
   &::after {
     position: absolute;
     top: 4px;
-    left: 4px;
+    right: 0;
 
     width: 16px;
     height: 16px;
@@ -33,13 +37,14 @@
   }
 
   &::before {
-    top: 12px;
+    top: 37px;
 
     height: 1px;
   }
 
   &::after {
-    left: 12px;
+    top: 29px;
+    right: 7px;
 
     width: 1px;
     display: none;
@@ -52,7 +57,11 @@
   }
 }
 
-.accordion--closed:not(.accordion--nojs) *:not(h2):not(button) {
+.accordion__header {
+  position: relative;
+}
+
+.accordion--closed:not(.accordion--nojs) *:not(h2):not(button):not(.accordion__header) {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
@@ -60,13 +69,7 @@
 
 .accordion--closed:not(.accordion--nojs) h2 {
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 0;
-  }
-}
-
-.accordion:not(.accordion--nojs) h2 {
-  @media (max-width: $mobile-width-only) {
-    cursor: pointer;
+    padding-bottom: 26px;
   }
 }
 

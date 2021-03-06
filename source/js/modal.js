@@ -10,9 +10,7 @@
   var questionText = document.querySelector('.js-question');
   var form = document.querySelector('.modal-form__form');
 
-  var isAvailable = callButton
-        && modalForm
-        && closeButton
+  var isAvailable = modalForm
         && wrapperForm
         && usernameInput
         && phoneInput
@@ -59,24 +57,39 @@
     evt.stopPropagation();
   };
 
-  callButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-
-    document.body.classList.add('page__body--fullscreen');
-    modalForm.classList.add('modal-form--open');
-
-    closeButton.addEventListener('click', onCloseModal);
-    window.addEventListener('keydown', onEscapeKeyPress);
-    modalForm.addEventListener('click', onCloseModal);
-
-    wrapperForm.addEventListener('click', onWrapperClick);
-
-    usernameInput.value = usernameValue;
-    phoneInput.value = phoneValue;
-    phoneMask.updateValue();
+  var prepareInputs = function () {
+    if (usernameValue !== null) {
+      usernameInput.value = usernameValue;
+    }
+    if (phoneValue !== null) {
+      phoneInput.value = phoneValue;
+      phoneMask.updateValue();
+    }
     questionText.value = questionValue;
     usernameInput.focus();
-  });
+  };
+
+  if (callButton) {
+    callButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      document.body.classList.add('page__body--fullscreen');
+      modalForm.classList.add('modal-form--open');
+
+      if (closeButton) {
+        closeButton.addEventListener('click', onCloseModal);
+      }
+
+      window.addEventListener('keydown', onEscapeKeyPress);
+      modalForm.addEventListener('click', onCloseModal);
+
+      wrapperForm.addEventListener('click', onWrapperClick);
+
+      prepareInputs();
+    });
+  } else {
+    prepareInputs();
+  }
 
   form.addEventListener('submit', function (evt) {
     if (!window.util.checkPhoneValidity(phoneInput)) {
@@ -87,9 +100,6 @@
       localStorage.setItem('username', usernameInput.value);
       localStorage.setItem('phone', phoneInput.value);
       localStorage.setItem('question', questionText.value);
-      window.util.resetValidity(usernameInput);
-      window.util.resetValidity(phoneInput);
-      window.util.resetValidity(questionText);
     }
   });
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Smart Device умные технологии">
+  <title>Закажите звонок</title>
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<!-- Модификатор fullscreen ставится элементу page__body, когда открыто модальное окно -->
+<body class="page__body page__body--fullscreen">
+  <h1 class="visually-hidden">Форма заказа звонка</h1>
+  <!-- Модификатор open ставится блоку modal-form, когда модальное окно октрывается -->
+  <section class="modal-form modal-form--open report">
+    <div class="modal-form__wrapper">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
+      <form class="modal-form__form report__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-form__field report__username-field">
+          <label class="visually-hidden" for="username-call-field">Введите свое имя</label>
+          <input class="js-username" type="text" name="username" id="username-call-field" placeholder="Имя" required="">
+        </div>
+
+        <div class="modal-form__field report__phone-field">
+          <label class="visually-hidden" for="phone-call-field">Введите свой номер телефона</label>
+          <input class="js-phone" type="tel" name="phone" id="phone-call-field" placeholder="Телефон" required="">
+        </div>
+
+        <div class="modal-form__field report__message-field">
+          <label class="visually-hidden" for="message-call-field">Задайте интересующий Вас вопрос</label>
+          <textarea class="js-question" name="message" id="message-call-field" placeholder="Ваш вопрос"></textarea>
+        </div>
+
+        <div class="modal-form__agreement-field report__agreement-field">
+          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement-call-field" required="">
+          <label for="agreement-call-field">Я согласен на обработку персональных данных</label>
+        </div>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

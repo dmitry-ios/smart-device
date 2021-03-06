@@ -3,12 +3,13 @@
 (function () {
   var form = document.querySelector('.feedback__form');
   var phoneInput = document.querySelector('#phone-field');
-  var phoneMask = window.util.makePhoneMask(phoneInput);
   var isAvailable = form && phoneInput;
 
   if (!isAvailable) {
     return;
   }
+
+  var phoneMask = window.util.makePhoneMask(phoneInput);
 
   form.addEventListener('submit', function (evt) {
     if (!window.util.checkPhoneValidity(phoneInput)) {

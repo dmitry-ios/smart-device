@@ -44,7 +44,7 @@
       </li>
     </ul>
     <div class="main-header__site-user">
-      <a class="js-call" href="#">
+      <a class="js-call" href="order-call.html">
         Заказать звонок
       </a>
     </div>
@@ -141,32 +141,34 @@
 
     <section class="feedback report" id="feedback">
       <div class="container feedback__container">
-        <h2>Остались вопросы? Задайте их нам!</h2>
-        <p>Мы проконсультируем Вас бесплатно</p>
+        <div class="feedback__wrapper">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
 
-        <form class="feedback__form report__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="feedback__username-field report__username-field">
-            <label class="visually-hidden" for="username-field">Введите свое имя</label>
-            <input type="text" name="username" id="username-field" placeholder="Имя" required>
-          </div>
+          <form class="feedback__form report__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="feedback__username-field report__username-field">
+              <label class="visually-hidden" for="username-field">Введите свое имя</label>
+              <input type="text" name="username" id="username-field" placeholder="Имя" required>
+            </div>
 
-          <div class="feedback__phone-field report__phone-field">
-            <label class="visually-hidden" for="phone-field">Введите свой номер телефона</label>
-            <input type="tel" name="phone" id="phone-field" placeholder="Телефон" required>
-          </div>
+            <div class="feedback__phone-field report__phone-field">
+              <label class="visually-hidden" for="phone-field">Введите свой номер телефона</label>
+              <input type="tel" name="phone" id="phone-field" placeholder="Телефон" required>
+            </div>
 
-          <div class="feedback__message-field report__message-field">
-            <label class="visually-hidden" for="message-field">Задайте интересующий Вас вопрос</label>
-            <textarea name="message" id="message-field" placeholder="Ваш вопрос"></textarea>
-          </div>
+            <div class="feedback__message-field report__message-field">
+              <label class="visually-hidden" for="message-field">Задайте интересующий Вас вопрос</label>
+              <textarea name="message" id="message-field" placeholder="Ваш вопрос"></textarea>
+            </div>
 
-          <div class="feedback__agreement-field report__agreement-field">
-            <input class="visually-hidden" type="checkbox" name="agreement" id="agreement-field" required>
-            <label for="agreement-field">Я согласен на обработку персональных данных</label>
-          </div>
+            <div class="feedback__agreement-field report__agreement-field">
+              <input class="visually-hidden" type="checkbox" name="agreement" id="agreement-field" required>
+              <label for="agreement-field">Я согласен на обработку персональных данных</label>
+            </div>
 
-          <button type="submit">Задать вопрос</button>
-        </form>
+            <button type="submit">Задать вопрос</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -217,12 +219,14 @@
       </div>
 
       <section class="main-footer__navigation navigation line accordion accordion--closed accordion--nojs">
-        <h2 class="main-footer__title">
-          Разделы сайта
-        </h2>
-        <button type="button">
-          <span class="visually-hidden">Открыть/Закрыть</span>
-        </button>
+        <div class="main-footer__title-wrapper accordion__header">
+          <h2 class="main-footer__title">
+            Разделы сайта
+          </h2>
+          <button type="button">
+            <span class="visually-hidden">Открыть/Закрыть</span>
+          </button>
+        </div>
         <nav>
           <ul>
             <li><a href="#">О компании</a></li>
@@ -239,12 +243,14 @@
       </section>
 
       <section class="main-footer__our-office our-office line accordion accordion--closed accordion--nojs">
-        <h2 class="main-footer__title">
-          Наш офис
-        </h2>
-        <button type="button">
-          <span class="visually-hidden">Открыть/Закрыть</span>
-        </button>
+        <div class="main-footer__title-wrapper accordion__header">
+          <h2 class="main-footer__title">
+            Наш офис
+          </h2>
+          <button type="button">
+            <span class="visually-hidden">Открыть/Закрыть</span>
+          </button>
+        </div>
         <p>г. Мытищи, Олимпийский проспект, д.10</p>
         <ul>
           <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>

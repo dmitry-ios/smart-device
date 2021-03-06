@@ -18,7 +18,7 @@
   };
 
   var toggleBlock = function (block) {
-    var btn = block.querySelector('h2');
+    var btn = block.querySelector('button');
 
     btn.addEventListener('click', function () {
       closeOthers(block);
