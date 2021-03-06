@@ -1,6 +1,7 @@
 .accordion {
   position: relative;
 
+  &--nojs,
   &:not(.accordion--closed) {
     padding-bottom: 26px;
   }
