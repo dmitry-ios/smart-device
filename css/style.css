@@ -1219,9 +1219,9 @@ input[type="radio"].visually-hidden {
 .accordion button {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -17px;
   padding: 4px;
-  width: 100%;
+  width: calc(100% + 2 * 17px);
   height: 100%;
   display: none;
   vertical-align: top;
@@ -1231,7 +1231,7 @@ input[type="radio"].visually-hidden {
   .accordion button::before, .accordion button::after {
     position: absolute;
     top: 4px;
-    right: 0;
+    right: 17px;
     width: 16px;
     height: 16px;
     content: "";
@@ -1241,7 +1241,7 @@ input[type="radio"].visually-hidden {
     height: 1px; }
   .accordion button::after {
     top: 29px;
-    right: 7px;
+    right: calc(7px + 17px);
     width: 1px;
     display: none; }
   @media (max-width: 767px) {
