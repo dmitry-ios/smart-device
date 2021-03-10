@@ -915,7 +915,8 @@ input[type="radio"].visually-hidden {
     padding-right: 16px; } }
 
 .main-footer {
-  padding-top: 65px; }
+  padding-top: 65px;
+  background-color: #ffffff; }
   @media (max-width: 1023px) {
     .main-footer {
       padding-top: 20px; } }
@@ -1924,6 +1925,11 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .modal-form--inner {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: transparent; }
   @media (max-width: 767px) {
     .modal-form {
       -webkit-box-align: start;

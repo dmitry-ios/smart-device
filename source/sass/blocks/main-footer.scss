@@ -1,6 +1,8 @@
 .main-footer {
   padding-top: 65px;
 
+  background-color: $text-white-color;
+
   @media (max-width: $tablet-width-only) {
     padding-top: 20px;
   }
